@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+* Template Name: About
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -14,16 +14,16 @@ get_header(); ?>
  
 			<?php
 			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/content', get_post_format() ); ?>
+				get_template_part( 'template-parts/content','about'); ?>
  
 				<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-md-8">
 								<?php the_post_navigation();
-								// If comments are open or we have at least one comment, load up the comment template.
-								if ( comments_open() || get_comments_number() ) :
-									comments_template();
-								endif; ?>
+								// // If comments are open or we have at least one comment, load up the comment template.
+								// if ( comments_open() || get_comments_number() ) :
+								// 	comments_template();
+								// endif; ?>
  
 							</div><!--  .col-md-8 -->
 						</div><!--  .row -->
