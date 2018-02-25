@@ -55,7 +55,7 @@ gulp.task('zip', function () {
    './templates/*',
    '!node_modules',
   ], {base: "."})
-  .pipe(zip('skeeter.zip'))
+  .pipe(zip('skeeter-before-style.zip'))
   .pipe(gulp.dest('.'));
 });
  

@@ -59,6 +59,8 @@ function skeeter_setup() {
 		'caption',
 	) );
 
+	add_theme_support( 'custom-logo' );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'skeeter_custom_background_args', array(
 		'default-color' => 'ffffff',
