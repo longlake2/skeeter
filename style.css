@@ -6690,6 +6690,10 @@ a.text-dark:hover, a.text-dark:focus {
 .site-header {
   margin-bottom: 3em; }
 
+.page-template-about .site-header,
+.page-template-home .site-header {
+  margin-bottom: 0; }
+
 .navbar-brand a {
   color: white; }
 
@@ -6708,6 +6712,10 @@ a.text-dark:hover, a.text-dark:focus {
 /*--------------------------------------------------------------
 ## templates
 --------------------------------------------------------------*/
+.banner {
+  background-color: #e9ecef;
+  padding: 3rem 0; }
+
 .site-content {
   word-break: break-word; }
 

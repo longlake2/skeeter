@@ -1,6 +1,13 @@
 .site-header {
 	margin-bottom: 3em;
 }
+.page-template-about,
+.page-template-home {
+	.site-header {
+		margin-bottom: 0;
+	}
+}
+
 
 //Navigation
 
