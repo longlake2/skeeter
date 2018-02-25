@@ -12,20 +12,15 @@ get_header(); ?>
 	<div class="container">
 			<div id="primary" class="content-area-full">
 				<main id="main" class="site-main" role="main">
-			
+
 				<?php
 				if ( have_posts() ) : ?>
 					<div class="row justify-content-center text-center">
 						<header class="page-header col-md-6">
-
-							<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
-
-							<?php if( $project_title != '') : ?>
-								<h1><?php echo $project_title; ?></h1>
-							<?php endif; ?>
-
+							<h1><?php single_term_title(); ?></h1>
 						</header><!-- .page-header -->
 					</div><!--  .row -->
+
 
 					<div class="row mt-5">
 						<?php
@@ -40,7 +35,6 @@ get_header(); ?>
 							get_template_part( 'template-parts/content', 'projects' );
 
 						endwhile; ?>
-
 
 						<div class="col-md-12">
 

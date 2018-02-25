@@ -40,6 +40,27 @@ function cmb2_skeeter_metaboxes() {
 		'type'       => 'textarea',
 	) );
 	
+		/**
+	 * metabox for project
+	 */
+	$cmb_project = new_cmb2_box( array(
+		'id'            => 'project_metabox',
+		'title'         => __( 'Images', 'skeeter' ),
+		'object_types'  => array( 'project', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Images for project
+	$cmb_project->add_field( array(
+		'name'       => __( 'Images', 'skeeter' ),
+		'desc'       => __( 'Upload images', 'skeeter' ),
+		'id'         => $prefix . 'images',
+		'type'       => 'file_list',
+	) );
 
 	// Add other metaboxes as needed
 }
